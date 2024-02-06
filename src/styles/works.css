@@ -1,0 +1,97 @@
+
+.works-section {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .works-section p {
+    font-size: 1.8rem;
+    color: #C6A969;
+  }
+  
+  .works-section h2 {
+    font-size: 3.5rem;
+    color: #597E52;
+    margin-top: 20px;
+  }
+  
+  .works-description {
+    margin-top: 30px;
+    font-size: 1.6rem;
+    color: #597E52;
+  }
+  
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #F1E4C3;
+    margin-bottom: 20px;
+    width: calc(50% - 30px); /* 50% da largura com um espaçamento de 20px */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .project-card-image {
+    width: 30%;
+    max-height: 230px; /* Ajuste a altura máxima */
+    border-radius: 20px;
+    object-fit: cover;
+  }
+  
+  .project-card-content {
+    margin-top: 15px;
+    text-align: center; /* Centralizar o texto */
+  }
+  
+  .project-card-title {
+    font-weight: bold;
+    font-size: 24px;
+    color: #597E52;
+  }
+  
+  .project-card-description {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #597E52;
+  }
+  
+  .project-card-tags {
+    margin-top: 10px;
+  }
+  
+  .project-card-tag {
+    font-size: 16px;
+    color: #C6A969;
+  }
+
+  .project-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+  
+  @keyframes pulse {
+    0% {
+      opacity: 0.5;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.5;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .project-card {
+      max-width: calc(100% - 20px); /* Em telas menores que 768px, exibir um card por linha */
+    }
+  }
